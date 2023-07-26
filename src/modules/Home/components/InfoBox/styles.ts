@@ -10,6 +10,6 @@ export const ContainerBox = styled(MuiBox)<MuiBoxProps>(
   ({ theme, variant }) => ({
     width: "100%",
     backgroundColor: variant === "red" ? Colors.red[400] : Colors.blue[400],
-    padding: "20px",
+    padding: "10px 20px",
   })
 );

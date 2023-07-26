@@ -6,12 +6,12 @@ const Home = () => {
     <Box width="100%" display="flex" justifyContent="center">
       <Grid container columnSpacing={2}>
         <Grid item xs={6}>
-          <InfoBox variant="blue">
+          <InfoBox variant="red">
             <Typography color="error.main">ole</Typography>
           </InfoBox>
         </Grid>
         <Grid item xs={6}>
-          <InfoBox variant="red">
+          <InfoBox variant="blue">
             <Typography color="error.main">ole</Typography>
           </InfoBox>
         </Grid>

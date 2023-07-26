@@ -35,4 +35,7 @@ export const Colors = {
   blue: {
     400: "blue",
   },
+  white: {
+    400: "white",
+  },
 };
