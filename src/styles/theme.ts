@@ -11,6 +11,10 @@ export const theme = createTheme({
     error: {
       main: "#d32f2f",
     },
+    background: {
+      paper: "blue",
+      default: "#FAFAFA",
+    },
   },
 
   typography: {
@@ -23,3 +27,12 @@ export const theme = createTheme({
     },
   },
 });
+
+export const Colors = {
+  red: {
+    400: "#d32f2f",
+  },
+  blue: {
+    400: "blue",
+  },
+};

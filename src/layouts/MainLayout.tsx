@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const HomepageLayout = (props: any) => {
   return (
@@ -10,7 +10,7 @@ const HomepageLayout = (props: any) => {
         style={{ minHeight: "100vh" }}
       >
         <Grid item xs={12}>
-          {props.children}
+          <Box margin="20px 20px">{props.children}</Box>
         </Grid>
       </Grid>
     </>
