@@ -23,6 +23,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   interaction: {
     mode: "index" as const,
     intersect: false,
@@ -30,10 +31,11 @@ export const options = {
   stacked: false,
   plugins: {
     title: {
-      display: true,
+      display: false,
       text: "Chart.js Line Chart - Multi Axis",
     },
   },
+
   scales: {
     y: {
       type: "linear" as const,
@@ -58,14 +60,14 @@ export const data = {
   datasets: [
     {
       label: "Dataset 1",
-      data: ["300", "450", "345", "300", "450", "345", "789"],
+      data: ["-50", "150", "78", "200", "123", "43", "67"],
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       yAxisID: "y",
     },
     {
       label: "Dataset 2",
-      data: ["300", "450", "345", "789", "300", "450", "345"],
+      data: ["0", "200", "123", "56", "134", "23", "123"],
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
       yAxisID: "y1",

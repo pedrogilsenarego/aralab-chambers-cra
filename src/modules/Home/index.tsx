@@ -16,9 +16,10 @@ const Home = () => {
       </Styled.Button>
     );
   };
+
   return (
-    <Box>
-      <Grid container>
+    <Box style={{ border: "solid 2px blue", height: "100%" }}>
+      <Grid container style={{ border: "solid 2px red", height: "100%" }}>
         <Grid item xs={6}>
           <InfoBox variant="red" />
         </Grid>
@@ -35,7 +36,13 @@ const Home = () => {
           <RenderButton variant={"max"} />
           <RenderButton variant={"min"} />
         </Grid>
-        <Grid item xs={10}>
+        <Grid
+          item
+          xs={10}
+          style={{
+            border: "solid 2px yellow",
+          }}
+        >
           <MultilineChart />
         </Grid>
         <Grid
