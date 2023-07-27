@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { BsDroplet } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
 import { PiThermometerHotDuotone } from "react-icons/pi";
 import { Colors } from "../../../../styles/theme";
 import { ContainerBox } from "./styles";
@@ -17,17 +18,17 @@ const InfoBox = ({ variant, ...props }: Props) => {
       <Grid container>
         <Grid item xs={12} display="flex" alignItems="center">
           <Grid container>
-            <Grid item xs={2} display="flex" alignItems="center">
+            <Grid item xs={1} display="flex" alignItems="center">
               {variant === "red" ? (
                 <>
                   <PiThermometerHotDuotone
-                    size="50px"
+                    size="60px"
                     color={Colors.white[400]}
                   />
                 </>
               ) : (
                 <>
-                  <BsDroplet size="50px" color={Colors.white[400]} />
+                  <BsDroplet size="60px" color={Colors.white[400]} />
                 </>
               )}
             </Grid>
@@ -38,12 +39,15 @@ const InfoBox = ({ variant, ...props }: Props) => {
               flexDirection="column"
               alignItems="center"
             >
-              <Typography fontSize="20px" color="white">
+              <Typography fontSize="30px" color="white">
                 Temperature
               </Typography>
               <Typography fontSize="90px" color="white">
                 {VALUE.toFixed(1)}
               </Typography>
+            </Grid>
+            <Grid item xs={1}>
+              <FiMenu size="30px" color="white" />
             </Grid>
           </Grid>
         </Grid>

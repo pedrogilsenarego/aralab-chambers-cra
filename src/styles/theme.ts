@@ -16,6 +16,15 @@ export const theme = createTheme({
       default: "#FAFAFA",
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: "6px",
+        },
+      },
+    },
+  },
 
   typography: {
     allVariants: {

@@ -1,20 +1,22 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import InfoBox from "./components/InfoBox";
 
 const Home = () => {
   return (
-    <Box width="100%" display="flex" justifyContent="center">
-      <Grid container columnSpacing={2}>
+    <Box>
+      <Grid container>
         <Grid item xs={6}>
-          <InfoBox variant="red">
-            <Typography color="error.main">ole</Typography>
-          </InfoBox>
+          <InfoBox variant="red" />
         </Grid>
         <Grid item xs={6}>
-          <InfoBox variant="blue">
-            <Typography color="error.main">ole</Typography>
-          </InfoBox>
+          <InfoBox variant="blue" />
         </Grid>
+        <Grid item xs={1} style={{ backgroundColor: "black" }}>
+          <Button>t</Button>
+          <Button>t</Button>
+        </Grid>
+        <Grid item xs={10} style={{ backgroundColor: "green" }}></Grid>
+        <Grid item xs={1} style={{ backgroundColor: "red" }}></Grid>
       </Grid>
     </Box>
   );
