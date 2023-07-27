@@ -18,8 +18,8 @@ const Home = () => {
   };
 
   return (
-    <Box style={{ border: "solid 2px blue", height: "100%" }}>
-      <Grid container style={{ border: "solid 2px red", height: "100%" }}>
+    <Box height="100">
+      <Grid container height="100%">
         <Grid item xs={6}>
           <InfoBox variant="red" />
         </Grid>
@@ -36,13 +36,7 @@ const Home = () => {
           <RenderButton variant={"max"} />
           <RenderButton variant={"min"} />
         </Grid>
-        <Grid
-          item
-          xs={10}
-          style={{
-            border: "solid 2px yellow",
-          }}
-        >
+        <Grid item xs={10}>
           <MultilineChart />
         </Grid>
         <Grid
