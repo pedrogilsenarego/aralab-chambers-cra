@@ -45,10 +45,14 @@ export const Colors = {
     700: "#696969",
   },
   red: {
+    200: "#d32f2f66",
+    300: "#d32f2fCC",
     400: "#d32f2f",
   },
   blue: {
-    400: "blue",
+    200: "#1F51FF66",
+    300: "#1F51FFCC",
+    400: "#1F51FF",
   },
   white: {
     400: "white",
