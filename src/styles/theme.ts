@@ -38,6 +38,12 @@ export const theme = createTheme({
 });
 
 export const Colors = {
+  grey: {
+    300: "#C0C0C0",
+    400: "grey",
+    600: "#808080",
+    700: "#696969",
+  },
   red: {
     400: "#d32f2f",
   },
