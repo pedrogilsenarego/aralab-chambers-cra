@@ -18,23 +18,30 @@ const InfoBox = ({ variant, ...props }: Props) => {
       <Grid container>
         <Grid item xs={12} display="flex" alignItems="center">
           <Grid container>
-            <Grid item xs={1} display="flex" alignItems="center">
+            <Grid
+              item
+              xs={2}
+              display="flex"
+              alignItems="center"
+              justifyContent="start"
+            >
               {variant === "red" ? (
-                <>
-                  <PiThermometerHotDuotone
-                    size="60px"
-                    color={Colors.white[400]}
-                  />
-                </>
+                <PiThermometerHotDuotone
+                  size="80px"
+                  color={Colors.white[400]}
+                  style={{ marginLeft: "-10px" }}
+                />
               ) : (
-                <>
-                  <BsDroplet size="60px" color={Colors.white[400]} />
-                </>
+                <BsDroplet
+                  size="80px"
+                  color={Colors.white[400]}
+                  style={{ marginLeft: "-10px" }}
+                />
               )}
             </Grid>
             <Grid
               item
-              xs={10}
+              xs={9}
               display="flex"
               flexDirection="column"
               alignItems="center"

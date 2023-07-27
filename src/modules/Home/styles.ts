@@ -1,11 +1,24 @@
-import { ButtonProps, Button as MuiButton } from "@mui/material";
+import { BoxProps, Box as MuiBox } from "@mui/material";
 import { styled } from "@mui/system";
 import { Colors } from "../../styles/theme";
 
-interface MuiButtonProps extends ButtonProps {}
+interface MuiBoxProps extends BoxProps {}
 
-export const Button = styled(MuiButton)<MuiButtonProps>(({ theme }) => ({
+export const Box = styled(MuiBox)<MuiBoxProps>(({ theme }) => ({
+  position: "relative",
   backgroundColor: Colors.grey[300],
-  flexDirection: "column",
-  aspectRatio: 1,
+  padding: "7px",
+  borderRadius: "6px",
+  "&::before": {
+    content: "''",
+    display: "block",
+    paddingTop: "100%", // 1:1 aspect ratio (change this value for other ratios)
+  },
+  "> *": {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
 }));

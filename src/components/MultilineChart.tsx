@@ -30,6 +30,9 @@ export const options = {
   },
   stacked: false,
   plugins: {
+    legend: {
+      display: false,
+    },
     title: {
       display: false,
       text: "Chart.js Line Chart - Multi Axis",

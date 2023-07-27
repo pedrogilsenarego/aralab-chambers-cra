@@ -8,18 +8,25 @@ import * as Styled from "./styles";
 const Home = () => {
   const RenderButton = ({ variant }: { variant: "max" | "min" }) => {
     return (
-      <Styled.Button>
-        <MdOutlineModeEdit size="26px" color={Colors.grey[600]} />
-        <Typography fontSize="12px" fontWeight={800} color={Colors.grey[600]}>
-          {variant === "max" ? "MAX" : "MIN"}
-        </Typography>
-      </Styled.Button>
+      <Styled.Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <MdOutlineModeEdit size="24px" color={Colors.grey[600]} />
+          <Typography fontSize="12px" fontWeight={800} color={Colors.grey[600]}>
+            {variant === "max" ? "MAX" : "MIN"}
+          </Typography>
+        </Box>
+      </Styled.Box>
     );
   };
 
   return (
     <Box height="100">
-      <Grid container height="100%">
+      <Grid container height="100%" spacing={2}>
         <Grid item xs={6}>
           <InfoBox variant="red" />
         </Grid>
